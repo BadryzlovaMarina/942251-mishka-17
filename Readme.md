@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Марина](https://up.htmlacademy.ru/adaptive/17/user/942251).
-* Наставник: `Неизвестно`.
+* Наставник: [Зубов Сергей].
 
 ---
 
