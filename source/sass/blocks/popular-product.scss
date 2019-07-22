@@ -1,0 +1,49 @@
+.popular-product {
+  padding-top: 30px;
+  padding-bottom: 36px;
+}
+
+.popular-product__week-title {
+  margin: 0;
+
+  @include font-set(25px, 30px);
+  font-weight: 700;
+}
+
+.popular-product__title {
+  display: block;
+  margin-bottom: 26px;
+
+  @include font-set(17px, 20px);
+  font-weight: 700;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.popular-product__description {
+  margin: 0;
+  margin-bottom: 29px;
+
+  @include font-set(15px, 24px);
+  color: $color-grey;
+}
+
+.popular-product__feature {
+  margin-bottom: 28px;
+
+  @include font-set(15px, 20px);
+  color: $color-grey;
+}
+
+.popular-product__image {
+  margin-bottom: 25px;
+}
+
+.popular-product__price {
+  margin: 0;
+  margin-bottom: 24px;
+
+  @include font-set(17px, 24px);
+  color: $color-grey;
+  font-weight: 700;
+}
