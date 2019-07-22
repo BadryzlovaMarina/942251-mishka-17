@@ -27,9 +27,11 @@
   @include font-set(19px, 24px);
   font-weight: 700;
   color: $color-white;
+
   &--interior {
     background-color: #63d1bb;
   }
+
   &--toys {
     background-color: #56c3b2;
   }
