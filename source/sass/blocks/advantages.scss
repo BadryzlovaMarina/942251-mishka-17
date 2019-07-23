@@ -1,0 +1,52 @@
+.advantages {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.advantages__list {
+  @include list-reset();
+}
+
+.advantages__item {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+
+  &--ecology {
+    margin-bottom: 26px;
+    padding-top: 53px;
+  }
+
+  &--style {
+    margin-bottom: 31px;
+    padding-top: 51px;
+  }
+
+  &--likes {
+    margin-bottom: 28px;
+    padding-top: 46px;
+  }
+
+  &--handmade {
+    margin-bottom: 29px;
+    padding-top: 50px;
+  }
+
+  &--native {
+    margin-bottom: 27px;
+    padding-top: 49px;
+  }
+
+  &--gift {
+    padding-top: 51px;
+  }
+}
