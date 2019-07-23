@@ -4,8 +4,3 @@
 
   list-style: none;
 }
-
-@mixin font-set($font-size, $line-height) {
-  font-size: $font-size;
-  line-height: $line-height;
-}

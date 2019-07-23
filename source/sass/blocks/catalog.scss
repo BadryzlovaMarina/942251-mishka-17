@@ -4,7 +4,8 @@
   padding-top: 70px;
   padding-bottom: 70px;
 
-  @include font-set(27px, 30px);
+  font-size: 27px;
+  line-height: 30px;
   font-weight: 700;
 
   background-color: $bg-grey;
@@ -32,7 +33,8 @@
 .catalog__subtitle {
   margin: 0;
 
-  @include font-set(17px, 24px);
+  font-size: 17px;
+  line-height: 24px;
   font-weight: 700;
   color: $color-black;
 }
@@ -41,13 +43,15 @@
   margin: 0;
   margin-bottom: 51px;
 
-  @include font-set(13px, 30px);
+  font-size: 13px;
+  line-height: 30px;
   color: $color-grey;
 }
 
 .catalog__price {
   margin: 0;
 
-  @include font-set(15px, 24px);
+  font-size: 15px;
+  line-height: 24px;
   font-weight: 700;
 }
