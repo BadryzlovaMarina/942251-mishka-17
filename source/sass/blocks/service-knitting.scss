@@ -1,0 +1,25 @@
+.service-knitting {
+  padding-bottom: 26px;
+}
+
+.service-knitting__title {
+  margin: 0;
+  margin-bottom: 25px;
+  padding-top: 72px;
+  padding-bottom: 76px;
+
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+
+  background-color: $bg-grey;
+}
+
+.service-knitting__description {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 24px;
+  color: $color-grey;
+}
