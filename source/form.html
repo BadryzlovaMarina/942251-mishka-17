@@ -12,6 +12,24 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list_item">
+              <a class="main-nav__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-list_item">
+              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -22,7 +40,7 @@
       <form class="form-order" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form-order__field option-type">
           <legend class="form-order__legend">ТИП</legend>
-          <ul class="option-type__list">
+          <ul class="form-order__list option-type__list">
             <li class="option-type__item">
               <input class="visually-hidden" id="type-accessory" type="radio" name="option-type" value="Аксессуар для  интерьера" checked>
               <label class="form-order__label" for="type-accessory">Аксессуар для  интерьера</label>
@@ -35,7 +53,7 @@
         </fieldset>
         <fieldset class="form-order__field option-color">
           <legend class="form-order__legend">ЦВЕТ</legend>
-          <ul class="option-color__list">
+          <ul class="form-order__list option-color__list">
             <li class="option-color__item">
               <input class="visually-hidden" id="color-white" type="checkbox" name="option-color" value="Белый" checked>
               <label class="form-order__label" for="color-white">Белый</label>
@@ -64,7 +82,7 @@
         </fieldset>
         <fieldset class="form-order__field field-client">
           <legend class="form-order__legend">ФИО</legend>
-          <ul class="field-client__list">
+          <ul class="form-order__list field-client__list">
             <li class="field-client__item">
               <label class="field-client__label" for="name">Имя:</label>
               <input class="form-order__input" id="name" type="text" name="name" placeholder="Введите ваше имя*">
@@ -81,7 +99,7 @@
         </fieldset>
         <fieldset class="form-order__field">
           <legend class="form-order__legend">ТЕЛ</legend>
-          <input class="form-order__input" type="number" name="telephone" placeholder="+7 XXX XX XX*">
+          <input class="form-order__input" type="tel" name="telephone" placeholder="+7 XXX XXX XX XX*">
         </fieldset>
         <fieldset class="form-order__field">
           <legend class="form-order__legend">E-MAIL</legend>
@@ -89,7 +107,7 @@
         </fieldset>
         <fieldset class="form-order__field">
           <legend class="form-order__legend">ДОП</legend>
-          <textarea class="form-order__input" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea class="form-order__input form-order__input--textarea" name="message" placeholder="Опишите все ваши пожелания к заказу" rows="7"></textarea>
         </fieldset>
         <p class="form-order__note">*Поля обязательны для заполнения</p>
         <button class="form-order__button button" type="submit" >Отправить заказ</button>
