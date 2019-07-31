@@ -55,3 +55,89 @@
   line-height: 24px;
   font-weight: 700;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    margin-bottom: 79px;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    text-align: center;
+  }
+
+  .catalog__list {
+    width: 669px;
+    margin: 0 auto;
+  }
+
+  .catalog__item {
+    display: flex;
+    margin-bottom: 54px;
+    padding: 0;
+  }
+
+  .catalog__link-image {
+    margin: 0;
+  }
+
+  .catalog__image {
+    width: 334px;
+    height: 334px;
+  }
+
+  .catalog__wrapper-item {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    padding: 25px 33px 25px 34px;
+  }
+
+  .catalog__link-name {
+    margin-bottom: 11px;
+  }
+
+  .catalog__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .catalog__description {
+    flex-grow: 1;
+    margin: 0;
+
+    font-size: 15px;
+  }
+
+  .catalog__price {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__title {
+    margin-bottom: 128px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+    width: 1049px;
+  }
+
+  .catalog__item {
+    flex-direction: column;
+  }
+
+  .catalog__image {
+    width: 316px;
+    height: 462px;
+  }
+
+  .catalog__wrapper-item {
+    height: 100%;
+  }
+}
