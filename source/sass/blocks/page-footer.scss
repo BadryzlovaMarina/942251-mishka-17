@@ -4,3 +4,55 @@
 
   background-color: $bg-grey;
 }
+
+.page-footer__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social {
+  margin: auto;
+  margin-bottom: 53px;
+}
+
+.page-footer__copyright {
+  width: 185px;
+  margin: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 668px;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__social {
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: 1050px;
+  }
+}
+

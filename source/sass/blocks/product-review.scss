@@ -25,7 +25,24 @@
 }
 
 .product-review__order {
-  display: block;
-
   margin-bottom: 33px;
 }
+
+@media (min-width: $tablet-width) {
+  .product-review {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .product-review__order {
+    width: 584px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-review {
+    width: 1050px;
+  }
+}
+
+

@@ -1,4 +1,6 @@
 .advantages {
+  width: 260px;
+  margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -22,31 +24,37 @@
   font-weight: 700;
 
   &--ecology {
+    width: 180px;
     margin-bottom: 26px;
     padding-top: 53px;
   }
 
   &--style {
+    width: 205px;
     margin-bottom: 31px;
     padding-top: 51px;
   }
 
   &--likes {
+    width: 185px;
     margin-bottom: 28px;
     padding-top: 46px;
   }
 
   &--handmade {
+    width: 215px;
     margin-bottom: 29px;
     padding-top: 50px;
   }
 
   &--native {
+    width: 255px;
     margin-bottom: 27px;
     padding-top: 49px;
   }
 
   &--gift {
+    width: 205px;
     padding-top: 51px;
   }
 }
@@ -54,9 +62,8 @@
 @media (min-width: $tablet-width) {
   .advantages {
     width: 668px;
-    margin: 0 auto;
     padding-top: 56px;
-    padding-bottom: 78px;
+    padding-bottom: 25px;
   }
 
   .advantages__title {
@@ -68,21 +75,46 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 410px;
+    height: 460px;
   }
 
   .advantages__item {
     width: 300px;
+    margin-bottom: 50px;
+    padding-top: 55px;
 
     font-size: 20px;
     line-height: 22px;
+
+    &--ecology {
+    width: 210px;
+  }
+
+    &--style {
+      width: 240px;
+    }
+
+    &--likes {
+      width: 215px;
+    }
+
+    &--handmade {
+      width: 250px;
+    }
+
+    &--native {
+      width: 300px;
+    }
+
+    &--gift {
+      width: 235px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages {
     width: 1050px;
-    margin: 0 auto;
     padding-top: 66px;
     padding-bottom: 85px;
     padding-left: 175px;
