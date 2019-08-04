@@ -31,12 +31,25 @@
   color: $color-grey;
 }
 
-.popular-product__feature {
+.popular-product__table {
+  width: 260px;
   margin-bottom: 28px;
 
   font-size: 15px;
   line-height: 20px;
   color: $color-grey;
+
+  border-collapse: collapse;
+}
+
+.popular-product__cell {
+  padding: 10px 0;
+
+  border-bottom: 1px solid #ececec;
+}
+
+.popular-product__cell--right {
+  padding-left: 30px;
 }
 
 .popular-product__image {
@@ -51,4 +64,111 @@
   line-height: 24px;
   color: $color-grey;
   font-weight: 700;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .popular-product {
+    padding-top: 39px;
+    padding-bottom: 49px;
+  }
+
+  .popular-product__top-wrapper {
+    display: flex;
+    margin-bottom: 51px;
+  }
+
+  .popular-product__week-title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .popular-product__title {
+    width: 80px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-bottom: 0;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .popular-product__main-wrapper {
+    position: relative;
+    padding-right: 382px;
+  }
+
+  .popular-product__description {
+    margin-bottom: 40px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .popular-product__table {
+    margin-bottom: 45px;
+  }
+
+  .popular-product__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+    width: 333px;
+    height: 404px;
+    margin-bottom: 0;
+  }
+
+  .popular-product__price {
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popular-product {
+    padding-top: 113px;
+    padding-bottom: 69px;
+  }
+
+  .popular-product__top-wrapper {
+    justify-content: flex-start;
+  }
+
+  .popular-product__week-title {
+    order: 2;
+    z-index: 2;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .popular-product__title {
+    order: 1;
+    margin-right: 54px;
+    margin-left: 0;
+  }
+
+  .popular-product__main-wrapper {
+    padding-left: 175px;
+    padding-right: 593px;
+  }
+
+  .popular-product__description {
+    margin-bottom: 62px;
+  }
+
+  .popular-product__table {
+    margin-bottom: 107px;
+  }
+
+  .popular-product__image {
+    top: -150px;
+
+    width: 525px;
+    height: 636px;
+  }
 }

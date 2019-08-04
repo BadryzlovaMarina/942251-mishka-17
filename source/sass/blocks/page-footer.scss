@@ -4,3 +4,49 @@
 
   background-color: $bg-grey;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social {
+  margin: 0 auto;
+  margin-bottom: 53px;
+}
+
+.page-footer__copyright {
+  width: 185px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-footer__logo {
+    display: block;
+    margin-right: 159px;
+  }
+
+  .page-footer__social {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
+    margin-right: 349px;
+  }
+}

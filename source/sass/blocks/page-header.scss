@@ -1,5 +1,42 @@
 .page-header {
-  display: flex;
-  padding-top: 22px;
-  padding-bottom: 15px;
+  margin-bottom: 30px;
+  padding-top: 72px;
+  padding-bottom: 70px;
+
+  background-color: $bg-grey;
+}
+
+.page-header__title {
+  margin: 0;
+
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    margin-bottom: 67px;
+    padding-top: 101px;
+    padding-bottom: 74px;
+  }
+
+  .page-header__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    margin-bottom: 111px;
+    padding-bottom: 95px;
+  }
+
+  .page-header__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

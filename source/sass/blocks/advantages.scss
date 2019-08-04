@@ -22,31 +22,102 @@
   font-weight: 700;
 
   &--ecology {
+    width: 180px;
     margin-bottom: 26px;
     padding-top: 53px;
   }
 
   &--style {
+    width: 205px;
     margin-bottom: 31px;
     padding-top: 51px;
   }
 
   &--likes {
+    width: 185px;
     margin-bottom: 28px;
     padding-top: 46px;
   }
 
   &--handmade {
+    width: 215px;
     margin-bottom: 29px;
     padding-top: 50px;
   }
 
   &--native {
+    width: 255px;
     margin-bottom: 27px;
     padding-top: 49px;
   }
 
   &--gift {
+    width: 205px;
     padding-top: 51px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding-top: 56px;
+    padding-bottom: 25px;
+  }
+
+  .advantages__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 295px;
+    margin-bottom: 50px;
+    padding-top: 55px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &--ecology {
+      order: 1;
+      width: 210px;
+    }
+
+    &--style {
+      order: 3;
+      width: 240px;
+    }
+
+    &--likes {
+      order: 5;
+      width: 215px;
+    }
+
+    &--handmade {
+      order: 2;
+    }
+
+    &--native {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    padding: 66px 175px 35px 175px;
+  }
+
+  .advantages__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
