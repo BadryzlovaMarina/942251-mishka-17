@@ -1,13 +1,11 @@
 .social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   @include list-reset();
 }
 
 .social {
   width: 141px;
-}
-
-.social__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }

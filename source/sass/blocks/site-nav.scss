@@ -1,0 +1,90 @@
+.site-nav {
+  border-top: 1px solid #ececec;
+}
+
+.site-nav__item {
+  border-bottom: 1px solid #ececec;
+}
+
+.site-nav__item--hidden {
+  display: none;
+}
+
+.site-nav__link {
+  display: block;
+  position: relative;
+  padding: 28px 0 26px 76px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-black;
+
+  white-space: nowrap;
+}
+
+@media (min-width: $tablet-width) {
+  .site-nav {
+    order: 1;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -65px;
+  }
+
+  .site-nav__item {
+    margin-right: 37px;
+
+    border-bottom: 0;
+  }
+
+  .site-nav__link {
+    padding: 20px 0;
+
+    font-size: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-nav {
+    order: -3;
+    width: 400px;
+    margin-right: 80px;
+  }
+
+  .site-nav__item--hidden {
+    display: block;
+  }
+
+  .site-nav__item {
+    margin-right: 0;
+  }
+
+  .site-nav__item--catalog {
+    border-right: 1px solid #ececec;
+  }
+
+  .site-nav__item--supply {
+    margin-right: 60px;
+  }
+
+  .site-nav__link--catalog {
+    padding: 32px 35px 31px 0;
+
+    font-size: 17px;
+  }
+
+  .site-nav__link--knitting {
+    padding: 32px 0 31px 35px;
+
+    font-size: 17px;
+  }
+
+  .site-nav__link--supply {
+    padding: 20px 0;
+  }
+
+  .site-nav__link--sale {
+    padding: 20px 0;
+  }
+}

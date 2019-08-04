@@ -5,23 +5,18 @@
   background-color: $bg-grey;
 }
 
-.page-footer__wrapper {
-  width: 260px;
-  margin: 0 auto;
-}
-
 .page-footer__logo {
   display: none;
 }
 
 .page-footer__social {
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 53px;
 }
 
 .page-footer__copyright {
   width: 185px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -33,16 +28,16 @@
   .page-footer__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 668px;
   }
 
   .page-footer__logo {
     display: block;
+    margin-right: 159px;
   }
 
   .page-footer__social {
     margin: 0;
+    margin-right: auto;
   }
 
   .page-footer__copyright {
@@ -51,8 +46,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer__wrapper {
-    width: 1050px;
+  .page-footer__logo {
+    margin-right: 349px;
   }
 }
-
