@@ -27,11 +27,11 @@
 
 .form-order__input {
   width: 100%;
-
   margin-bottom: 20px;
   padding-top: 17px;
   padding-bottom: 17px;
 
+  background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000;
 
@@ -42,14 +42,6 @@
   }
 }
 
-.form-order__input--textarea {
-  margin-bottom: 14px;
-  padding: 13px;
-  resize: none;
-
-  border: 2px solid #000000;
-}
-
 .form-order__note {
   margin: 0;
   margin-bottom: 27px;
@@ -57,4 +49,44 @@
   font-size: 14px;
   line-height: 16px;
   color: $color-grey;
+}
+
+.form-order__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .form-order__label {
+    font-size: 19px;
+  }
+
+  .form-order__wrap-bottom {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .form-order__input {
+    margin-bottom: 0;
+  }
+
+  .form-order__note {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form-order__button {
+    order: -1;
+    width: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-order__wrap-bottom {
+    width: 700px;
+  }
+
+  .form-order__legend {
+    margin-left: 60px;
+  }
 }
