@@ -1,0 +1,40 @@
+.option-type__wrap {
+  padding-bottom: 6px;
+}
+
+.option-type__list {
+  margin-top: 23px;
+}
+
+.option-type__item {
+  margin-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .option-type__wrap {
+    display: flex;
+    align-items: baseline;
+    padding-top: 50px;
+    padding-bottom: 27px;
+  }
+
+  .option-type__list {
+    width: 501px;
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  .option-type__item {
+    margin-bottom: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .option-type__wrap {
+    padding-right: 175px;
+  }
+
+  .option-type__list {
+    width: 700px;
+  }
+}

@@ -5,3 +5,45 @@
   line-height: 19px;
   font-weight: 700;
 }
+
+.field-client__list {
+  margin-top: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .field-client__wrap {
+    display: flex;
+    align-items: baseline;
+    padding-top: 50px;
+    padding-bottom: 26px;
+  }
+
+  .field-client__list {
+    width: 501px;
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  .field-client__item {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .field-client__label {
+    align-self: center;
+    margin-right: 25px;
+
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-client__wrap {
+    padding-right: 175px;
+  }
+
+  .field-client__list {
+    width: 700px;
+  }
+}

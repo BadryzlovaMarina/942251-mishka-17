@@ -1,0 +1,29 @@
+@media (min-width: $tablet-width) {
+  .block-contacts {
+    padding-top: 50px;
+    padding-bottom: 26px;
+
+    background-color: $bg-grey;
+  }
+
+  .block-contacts__wrap {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .block-contacts__input {
+    width: 501px;
+    margin-left: auto;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .block-contacts__wrap {
+    padding-right: 175px;
+  }
+
+  .block-contacts__input {
+    width: 700px;
+  }
+}

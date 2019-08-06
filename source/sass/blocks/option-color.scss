@@ -1,0 +1,48 @@
+.option-color {
+  padding-bottom: 8px;
+}
+
+.option-color__list {
+  margin-top: 19px;
+}
+
+.option-color__item {
+  margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .option-color {
+    padding-top: 50px;
+    padding-bottom: 26px;
+
+    background-color: $bg-grey;
+  }
+
+  .option-color__wrap {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .option-color__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 501px;
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  .option-color__item {
+    width: 230px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .option-color__wrap {
+    padding-right: 110px;
+  }
+
+  .option-color__list {
+    width: 770px;
+  }
+}

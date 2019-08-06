@@ -1,19 +1,5 @@
 .service-knitting {
-  padding-bottom: 26px;
-}
-
-.service-knitting__title {
-  margin: 0;
-  margin-bottom: 25px;
-  padding-top: 72px;
-  padding-bottom: 76px;
-
-  font-size: 27px;
-  line-height: 30px;
-  font-weight: 700;
-  text-align: center;
-
-  background-color: $bg-grey;
+  margin-bottom: 26px;
 }
 
 .service-knitting__description {
@@ -22,4 +8,18 @@
   font-size: 13px;
   line-height: 24px;
   color: $color-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .service-knitting__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .service-knitting__description {
+    width: 700px;
+    margin: 0 auto;
+  }
 }
