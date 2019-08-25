@@ -8,14 +8,17 @@
 }
 
 .header__wrap {
+  display: flex;
+  flex-direction: column;
   width: 320px;
+  height: 418px;
   margin: 0 auto;
 }
 
 .header__title {
+  flex-grow: 1;
   width: 245px;
   margin: 0 auto;
-  margin-bottom: 116px;
 
   font-size: 27px;
   line-height: 30px;
@@ -31,7 +34,7 @@
 .header__link {
   display: block;
   position: relative;
-  padding: 26px 175px 26px 32px;
+  padding: 25px 175px 30px 28px;
 
   font-size: 19px;
   line-height: 24px;
@@ -40,28 +43,50 @@
 
   &--interior {
     background-color: #63d1bb;
+
+    &:hover {
+      padding-bottom: 35px;
+
+      background-color: #59d5bc;
+    }
+
+    &:focus {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #59d5bc;
+    }
   }
 
   &--toys {
     background-color: #56c3b2;
+
+    &:hover {
+      padding-bottom: 35px;
+
+      background-color: #46c1ae;
+    }
+
+    &:focus {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #46c1ae;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .header {
-    padding-top: 157px;
+    padding-top: 154px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 0;
   }
 
   .header__wrap {
     width: 668px;
+    height: 592px;
   }
 
   .header__title {
     width: 500px;
     margin: 0 auto;
-    margin-bottom: 367px;
 
     font-size: 43px;
     line-height: 50px;
@@ -69,6 +94,7 @@
 
   .header__menu {
     display: flex;
+    align-items: flex-end;
   }
 
   .header__item {
@@ -76,7 +102,7 @@
   }
 
   .header__link {
-    padding: 31px 180px 30px 36px;
+    padding: 28px 180px 32px 36px;
 
     font-size: 20px;
     line-height: 30px;
@@ -90,7 +116,6 @@
 
   .header__title {
     width: 615px;
-    margin-bottom: 350px;
 
     font-size: 53px;
     line-height: 57px;
@@ -98,5 +123,15 @@
 
   .header__item {
     width: 525px;
+  }
+
+  .header__link {
+    &--interior {
+      padding-right: 265px;
+    }
+
+    &--toys {
+      padding-right: 305px;
+    }
   }
 }

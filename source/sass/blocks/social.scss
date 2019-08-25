@@ -2,10 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-end;
 
   @include list-reset();
 }
 
-.social {
-  width: 141px;
+@media (min-width: $tablet-width) {
+  .social {
+    width: 140px;
+  }
 }
