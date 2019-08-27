@@ -1,0 +1,18 @@
+.page-main {
+  padding-top: 30px;
+  padding-bottom: 58px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    padding-top: 79px;
+    padding-bottom: 63px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    padding-top: 130px;
+    padding-bottom: 105px;
+  }
+}

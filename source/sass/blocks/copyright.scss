@@ -1,5 +1,9 @@
-.copyright {
+.copyright__link {
   display: flex;
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -10,4 +14,5 @@
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
+  color: #000000;
 }

@@ -25,9 +25,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 7px;
-  right: 30px;
-
+  top: 9px;
+  right: 29px;
   width: 22px;
   height: 22px;
   margin: 0;
@@ -53,6 +52,7 @@
 
 .main-nav__delivery {
   display: none;
+  margin: 0;
 
   color: $color-grey;
 }
@@ -90,9 +90,9 @@
   .main-nav__delivery {
     display: block;
     order: 2;
-    margin-bottom: -65px;
+    margin-bottom: -60px;
     margin-left: auto;
-    padding: 20px 0;
+    padding: 18px 0;
   }
 }
 

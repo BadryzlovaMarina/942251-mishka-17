@@ -42,7 +42,7 @@
             </a>
           </li>
         </ul>
-        <a class="main-nav__delivery" href="#">Бесплатная доставка по России</a>
+        <p class="main-nav__delivery" href="#">Бесплатная доставка по России</p>
       </div>
     </nav>
     <header class="header">
@@ -54,7 +54,7 @@
         </ul>
       </div>
     </header>
-    <main class="page-main">
+    <main>
       <section class="container popular-product">
         <div class="popular-product__top-wrapper">
           <h2 class="popular-product__week-title">Вязаные корзинки</h2>
@@ -94,7 +94,7 @@
       </section>
       <section class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
-        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,&nbsp и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
         <div class="reviews__wrap-author">
           <p class="reviews__author-name">Анастасия Красильникова</p>
           <p class="reviews__author-email">@misssssiskras</p>
@@ -109,8 +109,8 @@
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__info-wrap">
-            <p class="contacts__email">e-mail: <span class="contacts__shop-email">info@mimimishkashop.ru</span></p>
-            <p class="contacts__address">адрес: <span class="contacts__shop-address">г.Санкт-Петербург,&nbsp; ул.Большая Конюшенная,&nbsp; д.19/8, офис 101</span></p>
+            <p class="contacts__email">e-mail: <a class="contacts__shop-email" href="#">info@mimimishkashop.ru</a></p>
+            <p class="contacts__address">адрес: <span class="contacts__shop-address">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8, офис 101</span></p>
           </div>
         </div>
         <div class="contacts__map">
@@ -138,14 +138,35 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="copyright__text">Разработано:</b>
             <span class="visually-hidden">HTML Academy</span>
             <img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="27px" height="34px">
           </a>
         </div>
       </div>
     </footer>
+    <section class="modal-cart">
+      <h2 class="modal-cart__title">Добавить в корзину</h2>
+      <p class="modal-cart__text">Выберите размер:</p>
+      <form class="modal-cart__form" action="https://echo.htmlacademy.ru">
+        <ul class="modal-cart__list">
+          <li class="modal-cart__item">
+            <input class="visually-hidden modal-cart__input" id="size-s" type="radio" name="option-size" value="S" checked>
+            <label class="modal-cart__label" for="size-s">S</label>
+          </li>
+          <li class="modal-cart__item">
+            <input class="visually-hidden modal-cart__input" id="size-m" type="radio" name="option-size" value="M">
+            <label class="modal-cart__label" for="size-m">M</label>
+          </li>
+          <li class="modal-cart__item modal-cart__item--last">
+            <input class="visually-hidden modal-cart__input" id="size-l" type="radio" name="option-size" value="L">
+            <label class="modal-cart__label" for="size-l">L</label>
+          </li>
+        </ul>
+        <button class="button modal-cart__button" type="submit">Добавить</button>
+      </form>
+    </section>
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
