@@ -20,6 +20,14 @@
 .catalog__link-name {
   display: block;
   margin-bottom: 5px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .catalog__subtitle {
