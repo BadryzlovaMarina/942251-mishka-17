@@ -35,13 +35,16 @@
   }
 
   .product-review__title {
-    padding: 37px 20px 32px 107px;
+    padding: 31px 20px 32px 107px;
 
     font-size: 20px;
   }
 
   .product-review__video {
     order: -1;
+  }
+
+  .product-review__image {
     width: 668px;
     height: 455px;
   }
@@ -62,7 +65,7 @@
   .product-review {
     box-sizing: border-box;
     position: relative;
-    padding: 94px 57px 60px 760px;
+    padding: 94px 57px 61px 760px;
 
     border: solid 1px #ececec;
   }
@@ -76,9 +79,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 682px;
-    height: 455px;
     margin-bottom: 0;
+  }
+
+  .product-review__image {
+    width: 682px;
+    height: 454px;
   }
 
   .product-review__wrap {

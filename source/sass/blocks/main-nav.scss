@@ -17,6 +17,8 @@
 .main-nav__logo-image {
   display: block;
   margin: 0 auto;
+  width: 86px;
+  height: 35px;
 }
 
 .main-nav__list {
@@ -84,7 +86,14 @@
 
   .main-nav__logo-link {
     order: -2;
+    margin-top: 22px;
     margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .main-nav__logo-image {
+    width: 112px;
+    height: auto;
   }
 
   .main-nav__delivery {
@@ -99,5 +108,13 @@
 @media (min-width: $desktop-width) {
   .main-nav__wrap {
     width: 1050px;
+  }
+
+  .main-nav__logo-link {
+    margin-top: 9px;
+  }
+
+  .main-nav__logo-image {
+    width: 149px;
   }
 }
