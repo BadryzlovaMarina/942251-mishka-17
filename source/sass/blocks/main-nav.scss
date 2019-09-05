@@ -12,6 +12,16 @@
 .main-nav__logo-link {
   display: block;
   margin: 22px 0;
+  margin-right: 118px;
+  margin-left: 116px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__logo-image {
@@ -89,6 +99,7 @@
     margin-top: 22px;
     margin-right: auto;
     margin-bottom: 0;
+    margin-left: 0;
   }
 
   .main-nav__logo-image {

@@ -1,7 +1,55 @@
+.block-contacts__input {
+  margin-top: 6px;
+  margin-bottom: 33px;
+  padding-right: 38px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    + .block-contacts__icon {
+      fill: #62d1ba;
+      opacity: 1;
+    }
+  }
+}
+
+.block-contacts__input--tel {
+  font-size: 19px;
+}
+
+.block-contacts__wrap-tel {
+  position: relative;
+}
+
+.block-contacts__wrap-mail {
+  position: relative;
+}
+
+.block-contacts__icon {
+  fill: #000000;
+  opacity: 0.2;
+
+  &--phone {
+    position: absolute;
+    top: 16px;
+    right: 9px;
+    width: 25px;
+    height: 25px;
+  }
+
+  &--mail {
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .block-contacts {
-    padding-top: 50px;
-    padding-bottom: 26px;
+    padding-top: 43px;
+    padding-bottom: 33px;
 
     background-color: $bg-grey;
   }
@@ -11,10 +59,30 @@
     align-items: baseline;
   }
 
+  .block-contacts__wrap-tel {
+    margin-left: auto;
+  }
+
+  .block-contacts__wrap-mail {
+    margin-left: auto;
+  }
+
   .block-contacts__input {
     width: 501px;
     margin-left: auto;
-    margin-bottom: 24px;
+    margin-bottom: 17px;
+    padding-right: 55px;
+  }
+
+  .block-contacts__icon {
+    &--phone {
+      top: 17px;
+      right: 27px;
+    }
+
+    &--mail {
+      right: 22px;
+    }
   }
 }
 
@@ -25,5 +93,15 @@
 
   .block-contacts__input {
     width: 700px;
+  }
+
+  .block-contacts__icon {
+    &--phone {
+      right: 9px;
+    }
+
+    &--mail {
+      right: 4px;
+    }
   }
 }

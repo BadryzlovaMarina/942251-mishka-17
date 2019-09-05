@@ -1,3 +1,7 @@
+.field-client__wrap {
+  padding-bottom: 11px;
+}
+
 .field-client__label {
   display: block;
 
@@ -7,15 +11,15 @@
 }
 
 .field-client__list {
-  margin-top: 29px;
+  margin-top: 27px;
 }
 
 @media (min-width: $tablet-width) {
   .field-client__wrap {
     display: flex;
     align-items: baseline;
-    padding-top: 50px;
-    padding-bottom: 26px;
+    padding-top: 48px;
+    padding-bottom: 28px;
   }
 
   .field-client__list {
@@ -26,7 +30,7 @@
 
   .field-client__item {
     display: flex;
-    margin-bottom: 24px;
+    margin-bottom: 23px;
   }
 
   .field-client__label {

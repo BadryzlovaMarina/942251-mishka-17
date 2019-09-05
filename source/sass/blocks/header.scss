@@ -68,6 +68,36 @@
       background-color: #46c1ae;
     }
   }
+
+  &:hover .header__icon {
+    opacity: 0.7;
+  }
+
+  &:focus .header__icon {
+    opacity: 0.3;
+  }
+}
+
+.header__icon {
+  position: absolute;
+
+  fill: #149080;
+
+  opacity: 0.5;
+}
+
+.header__icon--interior {
+  top: 23px;
+  right: 36px;
+  width: 40px;
+  height: 62px;
+}
+
+.header__icon--toys {
+  top: 21px;
+  right: 27px;
+  width: 60px;
+  height: 60px;
 }
 
 @media (min-width: $tablet-width) {
@@ -83,7 +113,21 @@
   }
 
   .header__wrap {
+    position: relative;
     width: 668px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -14px;
+      left: -51px;
+      width: 770px;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 770px 24px;
+      background-position: 0 0;
+      background-repeat: repeat-x;
+    }
   }
 
   .header__title {
@@ -97,7 +141,6 @@
 
   .header__menu {
     display: flex;
-    align-items: flex-end;
   }
 
   .header__item {
@@ -109,6 +152,15 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .header__icon--interior {
+    top: 30px;
+  }
+
+  .header__icon--toys {
+    top: 31px;
+    right: 34px;
   }
 }
 
@@ -125,16 +177,30 @@
     display: flex;
     flex-direction: column;
     width: 1050px;
-    min-height: 592px;
+    height: 592px;
+
+    &::after {
+      bottom: -16px;
+      left: -37px;
+      width: 1130px;
+      height: 34px;
+
+      background-size: 1250px 42px;
+      background-position: 62px 0;
+    }
   }
 
   .header__title {
-    flex-grow: 1;
     width: 615px;
     margin-bottom: 0;
 
     font-size: 53px;
     line-height: 57px;
+    flex-grow: 1;
+  }
+
+  .header__menu {
+    align-items: flex-end;
   }
 
   .header__item {
@@ -144,26 +210,23 @@
   .header__link {
     &--interior {
       padding-right: 265px;
-
-      &:hover {
-        padding-bottom: 37px;
-      }
-
-      &:focus {
-        padding-bottom: 37px;
-      }
     }
 
     &--toys {
       padding-right: 305px;
-
-      &:hover {
-        padding-bottom: 37px;
-      }
-
-      &:focus {
-        padding-bottom: 37px;
-      }
     }
+
+    &:hover {
+      padding-bottom: 37px;
+    }
+
+    &:focus {
+      padding-bottom: 37px;
+    }
+  }
+
+  .header__icon--toys {
+    top: 32px;
+    right: 35px;
   }
 }

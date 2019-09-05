@@ -1,5 +1,6 @@
 .service-knitting {
-  margin-bottom: 26px;
+  padding-top: 22px;
+  padding-bottom: 25px;
 }
 
 .service-knitting__description {
@@ -11,6 +12,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .service-knitting {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
   .service-knitting__description {
     font-size: 17px;
     line-height: 30px;
@@ -18,6 +24,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .service-knitting {
+    padding-top: 123px;
+  }
+
   .service-knitting__description {
     width: 700px;
     margin: 0 auto;

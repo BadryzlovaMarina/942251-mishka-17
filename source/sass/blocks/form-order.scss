@@ -3,10 +3,28 @@
 }
 
 .form-order__legend {
+  position: relative;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   color: $color-seafoam;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 62px;
+    height: 1px;
+    width: 198px;
+    background-color: #63d1bb;
+  }
+}
+
+.form-order__legend--mail {
+  &::after {
+    width: 179px;
+    left: 81px;
+  }
 }
 
 .form-order__field {
@@ -20,6 +38,7 @@
 }
 
 .form-order__label {
+  display: block;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -27,24 +46,30 @@
 
 .form-order__input {
   width: 100%;
-  margin-bottom: 20px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  height: 52px;
+  margin-bottom: 21px;
+
+  font-size: 17px;
+  line-height: 18px;
 
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000;
 
   &::placeholder {
-    font-size: 17px;
-    line-height: 18px;
     color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: #62d1ba;
   }
 }
 
 .form-order__note {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 31px;
 
   font-size: 14px;
   line-height: 16px;
@@ -56,6 +81,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-order {
+    padding-bottom: 50px;
+  }
+
+  .form-order__legend {
+    &::after {
+      display: none;
+    }
+  }
+
   .form-order__label {
     font-size: 19px;
   }
@@ -67,9 +102,15 @@
 
   .form-order__input {
     margin-bottom: 0;
+    height: 53px;
+    padding-left: 18px;
+
+    font-size: 19px;
   }
 
   .form-order__note {
+    margin-bottom: 0;
+
     font-size: 17px;
     line-height: 30px;
   }
@@ -78,6 +119,8 @@
     order: -1;
     width: auto;
     margin-right: auto;
+    padding-left: 28px;
+    padding-right: 32px;
   }
 }
 
@@ -87,6 +130,6 @@
   }
 
   .form-order__legend {
-    margin-left: 60px;
+    margin-left: 62px;
   }
 }

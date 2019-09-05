@@ -2,6 +2,19 @@
   position: relative;
   padding-top: 27px;
   padding-bottom: 43px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: -30px;
+    width: 319px;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 319px 7px;
+    background-position: 10px 0;
+    background-repeat: repeat-x;
+  }
 }
 
 .popular-product__week-title {
@@ -73,6 +86,15 @@
   .popular-product {
     padding-top: 44px;
     padding-bottom: 70px;
+
+    &::after {
+      left: -50px;
+      width: 768px;
+      height: 16px;
+
+      background-size: 768px 16px;
+      background-position: 18px 0;
+    }
   }
 
   .popular-product__top-wrapper {
@@ -142,6 +164,16 @@
   .popular-product {
     padding-top: 122px;
     padding-bottom: 100px;
+
+    &::after {
+      left: 0;
+      bottom: 5px;
+      width: 1052px;
+      height: 22px;
+
+      background-size: 1052px 22px;
+      background-position: 26px 0;
+    }
   }
 
   .popular-product__top-wrapper {
