@@ -9,7 +9,11 @@
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrap">
         <a class="main-nav__logo-link" href="index.html">
-          <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-nav">
@@ -29,22 +33,26 @@
         <ul class="main-nav__list user-menu">
           <li class="user-menu__item user-menu__item--search">
             <a class="user-menu__link user-menu__link--search" href="#">
-              <img src="img/icon-search.svg" width="18" height="18" alt="Поиск по сайту">
+              <svg class="user-menu__icon-search" width="18" height="18">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
               Поиск по сайту
             </a>
           </li>
           <li class="user-menu__item user-menu__item--cart">
             <a class="user-menu__link user-menu__link--cart" href="#">
-              <img src="img/icon-cart.svg" width="21" height="18" alt="Поиск по сайту">
+              <svg class="user-menu__icon-cart" width="21" height="18">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
               Корзина: пока пуста
             </a>
           </li>
         </ul>
-        <a class="main-nav__delivery" href="#">Бесплатная доставка по России</a>
+        <p class="main-nav__delivery">Бесплатная доставка по России</p>
       </div>
     </nav>
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header__wrap">
         <h1 class="page-header__title">Вязание на заказ</h1>
       </div>
     </header>
@@ -58,12 +66,12 @@
             <legend class="form-order__legend">ТИП</legend>
             <ul class="form-order__list option-type__list">
               <li class="option-type__item">
-                <input class="visually-hidden" id="type-accessory" type="radio" name="option-type" value="Аксессуар для  интерьера" checked>
-                <label class="form-order__label" for="type-accessory">Аксессуар для  интерьера</label>
+                <input class="visually-hidden option-type__input" id="type-accessory" type="radio" name="option-type" value="Аксессуар для  интерьера" checked>
+                <label class="form-order__label option-type__label" for="type-accessory">Аксессуар для  интерьера</label>
               </li>
               <li class="option-type__item">
-                <input class="visually-hidden" id="type-toy" type="radio" name="option-type" value="Детская игрушка">
-                <label class="form-order__label" for="type-toy">Детская игрушка</label>
+                <input class="visually-hidden option-type__input" id="type-toy" type="radio" name="option-type" value="Детская игрушка">
+                <label class="form-order__label option-type__label" for="type-toy">Детская игрушка</label>
               </li>
             </ul>
             </div>
@@ -73,28 +81,28 @@
             <legend class="form-order__legend">ЦВЕТ</legend>
             <ul class="form-order__list option-color__list">
               <li class="option-color__item">
-                <input class="visually-hidden" id="color-white" type="checkbox" name="option-color" value="Белый" checked>
-                <label class="form-order__label" for="color-white">Белый</label>
+                <input class="visually-hidden option-color__input" id="color-white" type="checkbox" name="option-color" value="Белый" checked>
+                <label class="form-order__label option-color__label" for="color-white">Белый</label>
               </li>
               <li class="option-color__item">
-                <input class="visually-hidden" id="color-gray" type="checkbox" name="option-color" value="Серый" checked>
-                <label class="form-order__label" for="color-gray">Серый</label>
+                <input class="visually-hidden option-color__input" id="color-gray" type="checkbox" name="option-color" value="Серый" checked>
+                <label class="form-order__label option-color__label" for="color-gray">Серый</label>
               </li>
               <li class="option-color__item">
-                <input class="visually-hidden" id="color-tiffany" type="checkbox" name="option-color" value="Тиффани">
-                <label class="form-order__label" for="color-tiffany">«Тиффани»</label>
+                <input class="visually-hidden option-color__input" id="color-tiffany" type="checkbox" name="option-color" value="Тиффани">
+                <label class="form-order__label option-color__label" for="color-tiffany">«Тиффани»</label>
               </li>
               <li class="option-color__item">
-                <input class="visually-hidden" id="color-black" type="checkbox" name="option-color" value="Черный">
-                <label class="form-order__label" for="color-black">Черный</label>
+                <input class="visually-hidden option-color__input" id="color-black" type="checkbox" name="option-color" value="Черный">
+                <label class="form-order__label option-color__label" for="color-black">Черный</label>
               </li>
               <li class="option-color__item">
-                <input class="visually-hidden" id="color-pink" type="checkbox" name="option-color" value="Розовый">
-                <label class="form-order__label" for="color-pink">Розовый</label>
+                <input class="visually-hidden option-color__input" id="color-pink" type="checkbox" name="option-color" value="Розовый">
+                <label class="form-order__label option-color__label" for="color-pink">Розовый</label>
               </li>
               <li class="option-color__item">
-                <input class="visually-hidden" id="orange" type="checkbox" name="option-color" value="Оранжевый">
-                <label class="form-order__label" for="orange">Оранжевый</label>
+                <input class="visually-hidden option-color__input" id="orange" type="checkbox" name="option-color" value="Оранжевый">
+                <label class="form-order__label option-color__label" for="orange">Оранжевый</label>
               </li>
             </ul>
           </div>
@@ -122,20 +130,30 @@
           <fieldset class="container form-order__field">
             <div class="block-contacts__wrap">
               <legend class="form-order__legend">ТЕЛ</legend>
-              <input class="form-order__input block-contacts__input" type="tel" name="telephone" placeholder="+7 XXX XXX XX XX*">
+              <div class="block-contacts__wrap-tel">
+                <input class="form-order__input block-contacts__input block-contacts__input--tel" type="tel" name="telephone" placeholder="+7 XXX XXX XX XX*">
+                <svg class="block-contacts__icon block-contacts__icon--phone" width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
+              </div>
             </div>
           </fieldset>
           <fieldset class="container form-order__field">
             <div class="block-contacts__wrap">
-              <legend class="form-order__legend">E-MAIL</legend>
-              <input class="form-order__input block-contacts__input" type="email" name="email" placeholder="Ваш Email*">
+              <legend class="form-order__legend form-order__legend--mail">E-MAIL</legend>
+              <div class="block-contacts__wrap-mail">
+                <input class="form-order__input block-contacts__input" type="email" name="email" placeholder="Ваш Email*">
+                <svg class="block-contacts__icon block-contacts__icon--mail" width="32" height="32">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
+              </div>
             </div>
           </fieldset>
         </div>
         <fieldset class="container form-order__field block-message">
           <div class="block-message__wrap">
             <legend class="form-order__legend">ДОП</legend>
-            <textarea class="form-order__input block-message__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу" rows="7"></textarea>
+            <textarea class="form-order__input block-message__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
           </div>
         </fieldset>
         <div class="container form-order__wrap-bottom">
@@ -146,27 +164,47 @@
     </main>
     <footer class="page-footer">
       <div class="container page-footer__wrapper">
-        <a class="page-footer__logo" href="#">
-          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина Мишка">
+        <a class="page-footer__logo" href="index.html">
+          <span class="visually-hidden">Логотип интернет-магазина Мишка</span>
+          <svg class="page-footer__logo-footer" width="102" height="35">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Мы в Инстаграм</span><img src="img/icon-insta.svg" width="22" height="21" alt="Инстаграм"></a>
+              <a class="social__link social__link--instagram" href="#">
+                <span class="visually-hidden">Мы в Инстаграм</span>
+                <svg class="social__icon" width="22" height="21">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Фейсбук</span><img src="img/icon-fb.svg" width="15" height="28" alt="Фейсбук"></a>
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Мы в Фейсбук</span>
+                <svg class="social__icon" width="15" height="28">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттер</span><img src="img/icon-twitter.svg" width="23" height="20" alt="Твиттер"></a>
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Мы в Твиттер</span>
+                <svg class="social__icon" width="23" height="22">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="copyright__text">Разработано:</b>
             <span class="visually-hidden">HTML Academy</span>
-            <img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="27px" height="34px">
+            <svg class="copyright__logo-htmlacademy" width="27" height="35">
+              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>

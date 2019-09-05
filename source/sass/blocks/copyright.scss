@@ -1,13 +1,25 @@
 .copyright__link {
   display: flex;
 
+  &:hover .copyright__logo-htmlacademy {
+    fill: #46c1ae;
+  }
+
   &:focus {
     opacity: 0.3;
   }
+
+  &:focus .copyright__logo-htmlacademy {
+    fill: #46c1ae;
+  }
+}
+
+.copyright__logo-htmlacademy {
+  fill: #63d1bb;
 }
 
 .copyright__text {
-  margin-right: 30px;
+  margin-right: 24px;
   padding-top: 7px;
   padding-bottom: 7px;
 

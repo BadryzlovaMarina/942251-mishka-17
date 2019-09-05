@@ -18,7 +18,25 @@
 @media (min-width: $tablet-width) {
   .page-header {
     padding-top: 95px;
+    padding-bottom: 0;
+  }
+
+  .page-header__wrap {
+    position: relative;
     padding-bottom: 80px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: -50px;
+      width: 770px;
+      height: 25px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 770px 25px;
+      background-position: 0 0;
+      background-repeat: repeat-x;
+    }
   }
 
   .page-header__title {
@@ -28,8 +46,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
+  .page-header__wrap {
     padding-bottom: 100px;
+
+    &::after {
+      bottom: -20px;
+      left: -49px;
+      width: 1150px;
+      height: 35px;
+      background-size: 1150px 35px;
+    }
   }
 
   .page-header__title {

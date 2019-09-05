@@ -36,6 +36,15 @@
   .page-footer__logo {
     display: block;
     margin-right: 159px;
+
+    &:hover .page-footer__logo-footer {
+      fill: #46c1ae;
+    }
+
+    &:focus .page-footer__logo-footer {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
   }
 
   .page-footer__social {
