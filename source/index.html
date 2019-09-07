@@ -5,7 +5,9 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -69,7 +71,7 @@
             <a class="header__link header__link--toys" href="#">
             Детские игрушки
             <svg class="header__icon header__icon--toys" width="60" height="60">
-              <use xlink:href="img/sprite.svg#icon-toys"></use>
+              <use xlink:href="img/sprite.svg#icon-toy"></use>
             </svg>
           </a>
           </li>
@@ -144,7 +146,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1567340073664!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" allowfullscreen=""></iframe>
+          <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1567340073664!5m2!1sru!2sru" allowfullscreen=""></iframe>
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
@@ -205,7 +207,7 @@
         </div>
       </div>
     </footer>
-    <section class="modal-cart">
+    <section class="modal-cart modal-cart--closed">
       <h2 class="modal-cart__title">Добавить в корзину</h2>
       <p class="modal-cart__text">Выберите размер:</p>
       <form class="modal-cart__form" action="https://echo.htmlacademy.ru">
@@ -226,21 +228,10 @@
         <button class="button modal-cart__button" type="submit">Добавить</button>
       </form>
     </section>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
+    <div class="modal-bg modal-bg--closed"></div>
 
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/main-nav.min.js"></script>
+    <script src="js/modal-cart.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
   </body>
 </html>
