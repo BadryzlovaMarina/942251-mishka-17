@@ -1,4 +1,5 @@
 .field-client__wrap {
+  padding: 0 30px;
   padding-bottom: 11px;
 }
 
@@ -18,8 +19,7 @@
   .field-client__wrap {
     display: flex;
     align-items: baseline;
-    padding-top: 48px;
-    padding-bottom: 28px;
+    padding: 48px 50px 28px 50px;
   }
 
   .field-client__list {
@@ -43,11 +43,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .field-client__wrap {
-    padding-right: 175px;
-  }
-
   .field-client__list {
     width: 700px;
+    margin-left: 73px;
   }
 }

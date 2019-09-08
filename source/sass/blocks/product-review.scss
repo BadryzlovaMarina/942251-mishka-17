@@ -1,4 +1,4 @@
-.product-review {
+.product-review__wrap-container {
   box-sizing: content-box;
 
   border: 1px solid #ececec;
@@ -57,6 +57,8 @@
   background-size: 101px 78px;
   border: none;
 
+  cursor: pointer;
+
   transition: 0.2s ease-in-out;
 
   &:hover,
@@ -71,7 +73,7 @@
 }
 
 .product-review__wrap {
-  padding: 21px 34px 33px 34px;
+  padding: 27px 34px 33px 34px;
 }
 
 .product-review__description {
@@ -85,9 +87,17 @@
 
 @media (min-width: $tablet-width) {
   .product-review {
+    padding: 0;
+  }
+
+  .product-review__wrap-container {
     box-sizing: border-box;
     position: relative;
+    width: 668px;
+    margin-left: 50px;
+    margin-right: 50px;
     min-height: 455px;
+    padding: 0;
 
     &::after {
       content: "";
@@ -119,19 +129,19 @@
     }
   }
 
-  .product-review__wrap-container {
+  .product-review__main-wrap {
     display: flex;
     flex-direction: column;
   }
 
   .product-review__title {
-    padding: 31px 20px 32px 107px;
+    padding: 37px 20px 32px 106px;
 
     font-size: 20px;
 
     &::after {
-      top: 26px;
-      left: 42px;
+      top: 32px;
+      left: 41px;
     }
   }
 
@@ -151,7 +161,8 @@
   }
 
   .product-review__wrap {
-    padding: 0 42px 46px 41px;
+    position: relative;
+    padding: 0 42px 98px 40px;
   }
 
   .product-review__description {
@@ -160,12 +171,21 @@
     font-size: 15px;
     line-height: 30px;
   }
+
+  .product-review__order {
+    position: absolute;
+    z-index: 20;
+    bottom: 46px;
+    left: 41px;
+    width: 584px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .product-review {
+  .product-review__wrap-container {
     box-sizing: border-box;
     position: relative;
+    width: 1050px;
     min-height: 455px;
 
     &::after {
@@ -178,7 +198,7 @@
         box-shadow: none;
       }
 
-      .product-review__wrap-container {
+      .product-review__main-wrap {
         box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
       }
     }
@@ -188,13 +208,13 @@
         box-shadow: none;
       }
 
-      .product-review__wrap-container {
+      .product-review__main-wrap {
         box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
       }
     }
   }
 
-  .product-review__wrap-container {
+  .product-review__main-wrap {
     width: 366px;
     margin-left: auto;
     padding: 94px 57px 61px 78px;
@@ -237,6 +257,7 @@
   }
 
   .product-review__order {
+    position: static;
     width: auto;
     margin: 0;
   }

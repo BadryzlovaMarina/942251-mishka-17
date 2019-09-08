@@ -29,7 +29,7 @@
       content: "";
       position: absolute;
       bottom: -15px;
-      left: -50px;
+      left: 0;
       width: 770px;
       height: 25px;
       background-image: url("../img/bg-zigzag-fill.svg");
@@ -51,7 +51,6 @@
 
     &::after {
       bottom: -20px;
-      left: -49px;
       width: 1150px;
       height: 35px;
       background-size: 1150px 35px;
