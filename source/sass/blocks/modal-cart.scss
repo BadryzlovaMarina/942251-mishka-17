@@ -68,8 +68,16 @@
   font-weight: 700;
   text-align: center;
 
-  border: 2px solid #c6c6c6;
+  border: 2px solid rgba(68, 68, 68, 0.1);
   cursor: pointer;
+
+  &:hover {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
 }
 
 .modal-cart__input:checked + .modal-cart__label {

@@ -1,6 +1,4 @@
-.reviews {
-  width: 260px;
-  margin: 0 auto;
+.reviews__wrap {
   padding-top: 27px;
   padding-bottom: 45px;
 }
@@ -42,34 +40,21 @@
 }
 
 .reviews__wrap-button {
-  position: relative;
+  display: flex;
   height: 52px;
   margin-bottom: 38px;
-  border: 1px solid #ececec;
-
-  &::after {
-    content: " ";
-
-    position: absolute;
-    top: 0;
-    left: 129px;
-
-    width: 1px;
-    height: 52px;
-
-    background-color: #ececec;
-  }
 }
 
 .reviews__button {
-  width: 127px;
+  width: 100%;
   height: 51px;
   padding: 0;
 
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  border: none;
+  background-size: 50px 26px;
+  border: 1px solid #ececec;
 
   cursor: pointer;
 
@@ -92,10 +77,13 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
+    padding: 0;
+  }
+
+  .reviews__wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 768px;
     padding: 77px 51px 46px 46px;
 
     background-image: url("../img/review@1x.jpg");
@@ -144,12 +132,8 @@
 
   .reviews__wrap-button {
     order: 5;
+    width: 176px;
     margin: 0;
-    border: none;
-
-    &::after {
-      display: none;
-    }
   }
 
   .reviews__write {
@@ -159,14 +143,14 @@
   }
 
   .reviews__button {
-    width: 84px;
+    border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .reviews {
-    width: 1050px;
-    padding: 70px 0 95px 172px;
+  .reviews__wrap {
+    margin-left: 50px;
+    padding: 70px 50px 95px 172px;
   }
 
   .reviews__title {

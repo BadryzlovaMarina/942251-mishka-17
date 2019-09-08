@@ -1,31 +1,27 @@
-var link = document.querySelector(".popular-product__order");
-var links = document.querySelectorAll(".catalog__basket");
-var modalBG = document.querySelector(".modal-bg");
-var popup = document.querySelector(".modal-cart");
-var close = popup.querySelector(".modal-cart__button");
+var modalOpen = document.querySelectorAll(".js-modal-open");
+var modal = document.querySelector(".modal-cart");
+var modalBg = document.querySelector(".modal-bg");
 
-for(var i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.add("modal-cart--opened");
+for (var i = 0; i < modalOpen.length; i++) {
+  modalOpen[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modal.classList.add("modal-cart--opened");
+    modalBg.classList.add("modal-bg--opened");
   });
 }
 
-link.addEventListener("click", function (evt) {
+modalBg.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.add("modal-cart--opened");
-});
-
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal-cart--opened");
+  modal.classList.remove("modal-cart--opened");
+  modalBg.classList.remove("modal-bg--opened");
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-      evt.preventDefault();
-    if (popup.classList.contains("modal-cart--opened")) {
-      popup.classList.remove("modal-cart--opened");
+    evt.preventDefault();
+    if (modal.classList.contains("modal-cart--opened")) {
+      modal.classList.remove("modal-cart--opened");
+      modalBg.classList.remove("modal-bg--opened");
     }
   }
 });

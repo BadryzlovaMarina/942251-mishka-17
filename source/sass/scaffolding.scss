@@ -50,19 +50,21 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 260px;
+  width: 320px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 668px;
+    width: 768px;
+    padding: 0 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1050px;
+    width: 1150px;
   }
 }
 
@@ -77,6 +79,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-bg {
+  display: none;
   position: fixed;
   z-index: 90;
   top: 0;
@@ -90,9 +93,5 @@ input[type="radio"].visually-hidden {
 
   &--opened {
     display: block;
-  }
-
-  &--closed {
-    display: none;
   }
 }

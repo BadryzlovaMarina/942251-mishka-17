@@ -1,3 +1,7 @@
+.block-contacts__wrap {
+  padding: 0 30px;
+}
+
 .block-contacts__input {
   margin-top: 6px;
   margin-bottom: 33px;
@@ -57,6 +61,7 @@
   .block-contacts__wrap {
     display: flex;
     align-items: baseline;
+    padding: 0 50px;
   }
 
   .block-contacts__wrap-tel {
@@ -87,8 +92,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .block-contacts__wrap {
-    padding-right: 175px;
+  .block-contacts__wrap-tel {
+    margin-left: 81px;
+  }
+
+  .block-contacts__wrap-mail {
+    margin-left: 56px;
   }
 
   .block-contacts__input {

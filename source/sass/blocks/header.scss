@@ -13,8 +13,7 @@
 }
 
 .header__wrap {
-  width: 320px;
-  margin: 0 auto;
+  padding: 0;
 }
 
 .header__title {
@@ -114,13 +113,13 @@
 
   .header__wrap {
     position: relative;
-    width: 668px;
+    padding: 0 50px;
 
     &::after {
       content: "";
       position: absolute;
       bottom: -14px;
-      left: -51px;
+      left: 0;
       width: 770px;
       height: 24px;
       background-image: url("../img/bg-zigzag-fill.svg");
@@ -176,12 +175,11 @@
   .header__wrap {
     display: flex;
     flex-direction: column;
-    width: 1050px;
     height: 592px;
 
     &::after {
-      bottom: -16px;
-      left: -37px;
+      bottom: -17px;
+      left: 17px;
       width: 1130px;
       height: 34px;
 
